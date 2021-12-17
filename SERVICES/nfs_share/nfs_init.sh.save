@@ -1,0 +1,5 @@
+mount 129.241.143.125:/volume1/imu_share /media/imu_share
+sleep 5
+chmod 755 /media/imu_share
+
+mount 129.241.143.125:/volume1/imu_data /media/imu_data

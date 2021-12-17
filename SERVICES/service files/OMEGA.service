@@ -1,0 +1,13 @@
+[Unit]
+Description=OATRC15 Camera Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/root/OMEGA
+ExecStart=/bin/bash start_omega.sh
+SyslogIdentifier=OATRC_cam
+
+[Install]
+WantedBy=multi-user.target

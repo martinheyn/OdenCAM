@@ -1,0 +1,14 @@
+ADISread:
+/usr/share/*
+
+nfs_share
+/usr/share/*
+
+nfs-common
+/usr/share/*
+
+rtc_ds3231
+/usr/share/*
+
+service-files:
+/lib/systemd/system/*.*

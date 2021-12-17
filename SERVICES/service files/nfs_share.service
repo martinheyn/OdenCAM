@@ -1,0 +1,13 @@
+[Unit] 
+Description=NFS Share for IMU System 
+Wants=network.target network-online.target
+After=network.target network-online.target
+
+[Service] 
+Type=simple 
+WorkingDirectory=/usr/share/nfs_share
+ExecStart=/bin/bash nfs_init.sh
+SyslogIdentifier=nfs_share
+
+[Install]
+WantedBy=multi-user.target

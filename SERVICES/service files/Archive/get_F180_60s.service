@@ -1,0 +1,11 @@
+[Unit]
+Description=FREJ 180 Camera Capturing 10s
+
+[Service]
+Type=simple
+WorkingDirectory=/home/root/OMEGA
+ExecStart=/bin/bash get_F180_10s.sh
+SyslogIdentifier=F180_cam_10s
+
+[Install]
+WantedBy=multi-user.target

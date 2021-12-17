@@ -1,0 +1,11 @@
+[Unit]
+Description=Oden 360 Camera Capturing
+
+[Service]
+Type=simple
+WorkingDirectory=/root/OMEGA
+ExecStart=/bin/bash get_O360.sh
+SyslogIdentifier=O360_cam
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=FREJ 360 Camera Capturing 1s
+
+[Service]
+Type=simple
+WorkingDirectory=/home/root/OMEGA
+ExecStart=/bin/bash get_F360_5s.sh
+SyslogIdentifier=F360_cam_5s
+
+[Install]
+WantedBy=multi-user.target
